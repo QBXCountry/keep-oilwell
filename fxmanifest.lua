@@ -3,7 +3,7 @@ games { 'gta5' }
 
 author "Swkeep#7049"
 
-shared_script { 'config.lua', 'shared/shared_main.lua' }
+shared_script { '@ox_lib/init.lua', 'config.lua', 'shared/shared_main.lua' }
 
 client_scripts {
      '@menuv/menuv.lua',
