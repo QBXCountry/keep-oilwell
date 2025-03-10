@@ -507,8 +507,7 @@ local function canWeAcceptMoreStock(Type, amount)
 end
 
 local function remove_item(source, Player, name, slot)
-     Player.Functions.RemoveItem(name, 1, slot)
-     TriggerClientEvent('qb-inventory:client:ItemBox', source, QBCore.Shared.Items[name], "remove")
+    exports.ox_inventory:RemoveItem(source, name, 1, nil, slot)
 end
 
 QBCore.Functions.CreateCallback('keep-oilrig:server:oil_transport:fillTransportWell', function(source, cb, amount)
